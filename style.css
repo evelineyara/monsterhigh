@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Estilo geral */
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Henny+Penny&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Manufacturing+Consent&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Henny+Penny&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Manufacturing+Consent&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Quicksand:wght@300..700&display=swap');
@@ -12,7 +14,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(82, 11, 129), black);
+   background-image: linear-gradient(to right, black, rgb(23, 2, 36));
 }
 
 body > h2 {
@@ -22,55 +24,41 @@ body > h2 {
     font-size: 15px;
 }
 
-h2 > a {
-    text-decoration: none;
-    color: rgb(151, 82, 216);
-    font-size: 17px;
-}
-
-h2 > a:hover {
-    background-image: linear-gradient(to right, blueviolet, transparent);
-    border-radius: 20px;
-    padding-top: 5px;
-    padding: 5px;
-    color: black;
-    transition-duration: 0.3s;
-}
-
 header {
     text-align: center;
     font-family: var(--fontedestaque);
     font-weight: normal;
-    background-color: rgba(57, 23, 73, 0.322);
+    background-color:black;
+    color: white;
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.192);
+    box-shadow: 5px 5px 5px 5px solid black;
 }
 
 nav a {
     text-decoration: none;
-    font-family: var(--fontedestaque);
+    font-family: var(--fontepadrao02);
     font-size: 15px;
-    color: blueviolet;
+    color: lightgray;
     margin-right: 15px;
 }
 
 nav a:hover {
     color: black;
-    background-color: rgba(167, 72, 255, 0.226);
+    background-color:rgba(211, 211, 211, 0.808);
     border-radius: 20px;
-    padding: 10px;
+    padding: 8px;
 
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
 
 main {
     margin: auto;
-    max-width: 800px;
+    max-width: 950px;
     text-align: center;
-    background-image: linear-gradient(to right, black, rgba(137, 43, 226, 0.068));
     border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.192);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 picture > img {
@@ -86,7 +74,7 @@ div.video {
 
 div.video > iframe {
     border-radius: 20px;
-    max-width: 700px ;
+    max-width: 750px;
     margin: auto;
     position: absolute;
     top: 5% ;
@@ -97,25 +85,31 @@ div.video > iframe {
 
 main > p {
     font-family: var(--fontpadrao);
-    color: blueviolet;
+    color: white;
     padding-top: 20px;
     padding-bottom: 5px;
-}
-
-main > p a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main > p a:hover {
-    color: rgb(140, 0, 255);
 }
 
 main > h1 {
     font-family: var(--fontedestaque);
     font-weight: normal;
-    padding-top: 30px;
-    color: rgb(151, 82, 216);
+    padding-top: 20px;
+    color:lightgray;
+}
+
+h2 > a {
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+}
+
+h2 > a:hover {
+    color: black;
+    background-color:rgba(211, 211, 211, 0.808);
+    border-radius: 20px;
+    padding: 10px;
+
+    transition-duration: 0.5s;
 }
 
 .produto-container {
@@ -125,37 +119,34 @@ main > h1 {
 }
 
 img {
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.247);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-div a {
+div > a {
     text-decoration: none;
 }
 
 footer {
-     text-align: center;
-    font-family: var(--fontedestaque);
+    text-align: center;
+    font-family: var(--fontepadrao02);
     font-weight: normal;
-    background-color: rgba(74, 4, 107, 0.185);
-    padding: 5px 5px 5px 5px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.192);
+    background-color:black;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
 }
 
-footer a {
+footer > p > a {
     text-decoration: none;
-    color: blueviolet;
+    color: gray;
 
 }
 
 footer a:hover {
-    color: black;
-    background-color:  rgba(167, 72, 255, 0.226);
-    border-radius: 25px;
-    padding: 10px;
-
-    transition-duration: 0.3s;
+    color:white;
+    transition-duration: 0.4s;
 }
